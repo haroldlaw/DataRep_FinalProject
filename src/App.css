@@ -1,38 +1,168 @@
-.App {
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafc;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+}
+
+/* Content Component Styling */
+.Content {
   text-align: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #38b6ff;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: #6dd47e;
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Form Styling */
+form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333333;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #38b6ff;
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #38b6ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2a8ebf;
+}
+
+/* Button Styles */
+.btn-primary {
+  margin: 10px;
+  background-color: #38b6ff;
+  border-color: #38b6ff;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #2a8ebf;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  margin: 10px;
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-danger:hover {
+  background-color: #e63939;
+  transform: scale(1.05);
+}
+
+/* Card Styling */
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #333333;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-header {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #6dd47e;
+  color: #ffffff;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #333333;
+}
+
+.blockquote footer {
+  font-size: 1.4rem;
+  margin: 5px 0;
+  color: #6dd47e;
 }
